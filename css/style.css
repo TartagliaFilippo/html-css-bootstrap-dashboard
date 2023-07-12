@@ -1,4 +1,12 @@
 /* GENERICS */
+:root {
+  --blue: #1b72e8;
+  --yellow: #ff8f00;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #acacac;
+  --aside: #051e34;
+}
 
 /* UTILS */
 
