@@ -58,13 +58,33 @@
 #aside .aside-row .icons:nth-child(3) {
   margin-bottom: auto;
 }
-
+/* MAIN CONTENT */
 #main-content {
   height: calc(100vh - 80px);
   width: calc(100% - 70px);
   position: fixed;
   right: 0;
   bottom: 0;
+}
+
+/* HEADER-MAIN */
+#header-main {
+  min-height: 130px;
+  background-color: var(--blue);
+}
+
+/* MC-CARDS */
+#mc-cards .container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+/* OFFCANVAS */
+.offcanvas.offcanvas-end {
+  max-width: 768px;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 20px;
 }
 
 /* MEDIA QUERIES */
@@ -89,6 +109,7 @@
 
 .bordered {
   border: 1px solid red;
+  min-height: 50px;
 }
 
 .bg {
