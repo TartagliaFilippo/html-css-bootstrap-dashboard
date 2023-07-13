@@ -120,6 +120,10 @@
   margin-left: 10px;
 }
 
+.form-check label {
+  font-size: 13px;
+}
+
 /* MC-CARDS */
 #mc-cards {
   overflow: auto;
