@@ -591,39 +591,157 @@
       </div>
       <div class="offcavans_main">
         <div class="container-fluid">
-          <div class="row justify-content-center g-3">
+          <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="name-input" class="form-label">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name-input"
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="surname-input" class="form-label">Cognome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="surname-input"
+                    placeholder="Surname"
+                  />
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="input-group mb-3">
+                  <label for="email-input" class="form-label">Email</label>
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email-input"
+                      placeholder="Email"
+                      aria-label="Username"
+                      aria-describedby="addon-wrapping"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="password-input" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password-input"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-12">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="address-input" class="form-label"
+                    >Indirizzo</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address-input"
+                    placeholder="Address"
+                  />
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="city-input" class="form-label">Città</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city-input"
+                    placeholder="City"
+                  />
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <label for="city-input" class="form-label">Stato</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Scegli..</option>
+                  <option value="1">Italia</option>
+                  <option value="2">Pakistan</option>
+                  <option value="3">India</option>
+                  <option value="4">Cina</option>
+                  <option value="5">Giappone</option>
+                  <option value="6">America</option>
+                  <option value="7">Colombia</option>
+                  <option value="8">Brasile</option>
+                  <option value="9">Capo Verde</option>
+                  <option value="10">Congo</option>
+                </select>
+              </div>
             </div>
             <div class="col-12 col-md-2">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="cap-input" class="form-label">CAP</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cap-input"
+                    placeholder="CAP"
+                    maxlength="6"
+                  />
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-12">
-              <div class="cards bordered"></div>
+              <div class="cards">
+                <div class="mb-3">
+                  <label for="formFileMultiple" class="form-label">Foto</label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="formFileMultiple"
+                    placeholder="Nessun file selezionato"
+                    multiple
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="cards mb-3">
+                <input
+                  type="checkbox"
+                  name="privacy"
+                  id="privacy"
+                  value="Privacy Accettata"
+                  class="required"
+                />
+                <label for="privacy">Seleziona per proseguire</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="cards mb-3">
+                <button type="button" class="btn btn-primary">Salva</button>
+                <button type="button" class="btn btn-warning">Svuota</button>
+              </div>
             </div>
           </div>
         </div>
