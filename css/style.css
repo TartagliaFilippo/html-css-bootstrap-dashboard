@@ -18,6 +18,7 @@
 }
 
 /* STRUCTURE */
+/* NAVBAR */
 #navbar {
   background-color: var(--white);
   height: 80px;
@@ -45,8 +46,25 @@
   gap: 15px;
 }
 
-.col-1.col-lg-2.rd > .icons:last-child {
+.col-1.col-lg-2.rd > .icons:last-child button {
+  border: none;
+  background-color: var(--white);
+  display: contents;
+}
+
+.col-1.col-lg-2.rd > .icons:last-child button i {
   color: var(--yellow);
+}
+
+ul.dropdown-menu.show {
+  position: absolute !important;
+  left: -110px !important;
+  top: 80px !important;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 /* ASIDE */
