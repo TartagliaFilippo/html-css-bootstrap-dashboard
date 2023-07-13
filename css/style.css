@@ -70,6 +70,7 @@
 #aside .aside-row .icons:nth-child(3) {
   margin-bottom: auto;
 }
+
 /* MAIN CONTENT */
 #main-content {
   height: calc(100vh - 80px);
@@ -81,8 +82,40 @@
 
 /* HEADER-MAIN */
 #header-main {
-  min-height: 130px;
   background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 0;
+}
+
+#header-main .mh-row {
+  flex-direction: column !important;
+  align-items: start;
+  gap: 20px;
+}
+
+.mh-cards.st h2 {
+  display: inline;
+}
+
+.text-bg-primary {
+  background-color: RGBA(0, 0, 0, var(--bs-bg-opacity, 0.3)) !important;
+}
+
+.mh-cards > h5 {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.mh-cards.nd > p {
+  font-size: 40px;
+}
+
+.mh-cards.rd > h5 {
+  display: inline;
+}
+
+.mh-cards.rd > button {
+  margin-left: 10px;
 }
 
 /* MC-CARDS */
@@ -101,6 +134,24 @@
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
+  #header-main .mh-row {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  #header-main .mh-cards.rd {
+    order: 3;
+  }
+
+  #header-main .mh-cards.st {
+    order: 1;
+  }
+
+  #header-main .mh-cards.nd {
+    order: 2;
+  }
 }
 
 @media screen and (min-width: 992px) {
