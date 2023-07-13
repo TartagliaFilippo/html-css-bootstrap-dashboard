@@ -144,6 +144,12 @@ tr .badge {
   margin: 10px 0;
 }
 
+.list-group.list-group-flush .collapse-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* OFFCANVAS */
 .offcanvas.offcanvas-end {
   max-width: 768px;
