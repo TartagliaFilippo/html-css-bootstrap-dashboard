@@ -9,5 +9,74 @@
 }
 
 /* UTILS */
+.row {
+  width: 100%;
+}
 
 /* STRUCTURE */
+#navbar {
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#aside {
+  min-width: 100px;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+}
+
+#aside .container {
+  height: 100%;
+}
+
+#aside .aside-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#aside .aside-row .col-6:nth-child(3) {
+  margin-bottom: auto;
+}
+
+#main-content {
+  height: calc(100vh - 50px);
+  width: calc(100% - 100px);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  #aside {
+    min-width: 200px;
+  }
+
+  #main-content {
+    width: calc(100% - 200px);
+  }
+}
+
+/* DEBUG */
+.box {
+  height: 50px;
+  background-color: green;
+}
+
+.bordered {
+  border: 1px solid red;
+}
+
+.bg {
+  background-color: rebeccapurple;
+}
