@@ -120,10 +120,6 @@
   margin-left: 10px;
 }
 
-.form-check label {
-  font-size: 13px;
-}
-
 /* MC-CARDS */
 #mc-cards {
   overflow: auto;
@@ -140,6 +136,10 @@ table * {
   text-align: center;
 }
 
+.form-check label {
+  font-size: 13px;
+}
+
 th img {
   height: 25px;
 }
@@ -152,6 +152,23 @@ tr .badge {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.stats {
+  width: 100%;
+}
+
+.list-group-item p {
+  font-size: 13px;
+}
+
+.list-group-item h5 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.list-group.list-group-flush li {
+  font-size: 13px;
 }
 
 /* OFFCANVAS */
