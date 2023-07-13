@@ -8,6 +8,10 @@
   --aside: #051e34;
 }
 
+.wrapper {
+  height: 100vh;
+}
+
 /* UTILS */
 .row {
   width: 100%;
@@ -15,23 +19,32 @@
 
 /* STRUCTURE */
 #navbar {
-  height: 50px;
+  height: 80px;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
 }
 
+#navbar .container-fluid {
+  line-height: 80px;
+}
+
+#navbar .cards img:last-child {
+  height: 60px;
+}
+
+#search-bar input {
+  border-left: none;
+  background-color: #e9ecef;
+}
+
 #aside {
   min-width: 100px;
   position: fixed;
-  top: 50px;
+  top: 80px;
   bottom: 0;
   left: 0;
-}
-
-#aside .container {
-  height: 100%;
 }
 
 #aside .aside-row {
@@ -46,7 +59,7 @@
 }
 
 #main-content {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 80px);
   width: calc(100% - 100px);
   position: fixed;
   right: 0;

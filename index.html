@@ -26,16 +26,53 @@
   <body>
     <div class="wrapper">
       <div class="top-content">
-        <div id="navbar" class="bordered">
+        <div id="navbar" class="">
           <div class="container-fluid">
-            <div class="d-flex align-items-center bordered">
-              <div class="col-2">LOGO</div>
-              <div class="col-8">SEARCH</div>
-              <div class="col-2 d-flex align-items-center">
-                <div class="cards d-none d-md-flex flex-row align-items-center">
-                  ICONE
+            <div class="d-flex align-items-center">
+              <div class="col-1 col-lg-2">
+                <div class="cards">
+                  <img
+                    class="d-none d-lg-block w-75"
+                    src="./img/logo.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="cards">ICONA</div>
+                <div class="cards">
+                  <img class="d-lg-none" src="./img/mobile-logo.png" alt="" />
+                </div>
+              </div>
+              <div id="search-bar" class="col-10 col-lg-8">
+                <!-- SEARCH BAR -->
+                <form class="container-fluid">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-search"></i>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Prova a cercare: Lezioni di Lavarel"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div
+                class="col-1 col-lg-2 d-flex align-items-center justify-content-center"
+              >
+                <div class="cards d-none d-lg-flex flex-row align-items-center">
+                  <div class="icons">
+                    <i class="bi bi-list-ul"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="bi bi-question-circle-fill"></i>
+                  </div>
+                  <div class="icons">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="cards"><i class="bi bi-bell-fill"></i></div>
               </div>
             </div>
           </div>
@@ -43,7 +80,7 @@
       </div>
       <div class="bottom-content">
         <div id="aside" class="bordered">
-          <div class="container">
+          <div class="container-fluid h-100">
             <div class="aside-row">
               <div class="col-6 box"></div>
               <div class="col-6 box"></div>
@@ -53,16 +90,16 @@
           </div>
         </div>
         <div id="main-content" class="bg">
-          <div class="container">
-            <div class="header-main"></div>
-          </div>
-          <div class="container">
+          <div class="header-main"></div>
+          <div class="container-fluid"></div>
+          <div class="mc-cards">
+            <div class="container-fluid"></div>
             <div class="row">
-              <div class="col">
+              <div class="col-12 col-lg-8">
                 <div class="cards"></div>
                 <div class="cards"></div>
               </div>
-              <div class="col">
+              <div class="col-12 col-lg-4">
                 <div class="cards"></div>
                 <div class="cards"></div>
               </div>
