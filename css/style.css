@@ -19,11 +19,13 @@
 
 /* STRUCTURE */
 #navbar {
+  background-color: var(--white);
   height: 80px;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  z-index: 10;
 }
 
 #navbar .container-fluid {
@@ -75,7 +77,7 @@
 #main-content {
   height: calc(100vh - 80px);
   width: calc(100% - 70px);
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
 }
@@ -119,10 +121,27 @@
 }
 
 /* MC-CARDS */
+#mc-cards {
+  overflow: auto;
+}
+
 #mc-cards .container-fluid {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+}
+
+table * {
+  font-size: 12px;
+  text-align: center;
+}
+
+th img {
+  height: 25px;
+}
+
+tr .badge {
+  margin: 10px 0;
 }
 
 /* OFFCANVAS */
