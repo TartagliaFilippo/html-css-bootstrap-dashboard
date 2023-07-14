@@ -72,16 +72,19 @@ ul.dropdown-menu.show {
   display: none;
 }
 
+/* BOTTOM CONTENT */
+.bottom-content {
+  display: flex;
+  padding-top: 80px;
+}
+
 /* ASIDE */
 #aside {
-  min-width: 70px;
+  height: calc(100vh - 80px);
+  width: 70px;
   background-image: url(../img/sidebar-bg.png);
   background-color: var(--aside);
   color: var(--white);
-  position: fixed;
-  top: 80px;
-  bottom: 0;
-  left: 0;
 }
 
 #aside .aside-row {
@@ -109,9 +112,7 @@ ul.dropdown-menu.show {
 #main-content {
   height: calc(100vh - 80px);
   width: calc(100% - 70px);
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  overflow: auto;
 }
 
 /* HEADER-MAIN */
@@ -262,7 +263,7 @@ CUSTOM ACCORDATION */
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   #aside {
-    min-width: 130px;
+    width: 130px;
   }
 
   #main-content {
