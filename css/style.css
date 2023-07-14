@@ -46,6 +46,10 @@
   gap: 15px;
 }
 
+.col-1.col-lg-2.rd > .icons {
+  cursor: pointer;
+}
+
 .col-1.col-lg-2.rd > .icons:last-child button {
   border: none;
   background-color: var(--white);
@@ -56,6 +60,7 @@
   color: var(--yellow);
 }
 
+/* DROPDOWN */
 ul.dropdown-menu.show {
   position: absolute !important;
   left: -110px !important;
@@ -158,6 +163,14 @@ ul.dropdown-menu.show {
   padding: 20px 0;
 }
 
+#mc-cards .card-header {
+  font-size: 26px;
+}
+
+/* FIRST "COL" MAIN CARDS */
+
+/* FIRST CARD 
+"NEXT CLASSES" */
 table * {
   font-size: 12px;
   text-align: center;
@@ -175,6 +188,8 @@ tr .badge {
   margin: 10px 0;
 }
 
+/* SECOND CARD
+CUSTOM ACCORDATION */
 .accordion-button:not(.collapsed) {
   background-color: var(--white);
   color: var(--black);
@@ -184,12 +199,17 @@ tr .badge {
   box-shadow: var(--white);
 }
 
-.list-group.list-group-flush .collapse-row {
+/* FAQ SECTION MADE WITH "COLLAPSE" */
+/* .list-group.list-group-flush .collapse-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
+/* SECOND "COL" MAIN CARD */
+
+/* FIRST CARD 
+"TO DO" */
 .stats {
   width: 100%;
 }
@@ -216,6 +236,8 @@ tr .badge {
 }
 
 /* MEDIA QUERIES */
+
+/* TABLET */
 @media screen and (min-width: 768px) {
   #header-main .mh-row {
     flex-direction: row !important;
@@ -237,6 +259,7 @@ tr .badge {
   }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 992px) {
   #aside {
     min-width: 130px;
