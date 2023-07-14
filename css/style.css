@@ -87,8 +87,17 @@ ul.dropdown-menu.show {
   padding: 20px 0;
 }
 
+#aside .aside-row .icons {
+  cursor: pointer;
+}
+
 #aside .aside-row .icons:nth-child(3) {
   margin-bottom: auto;
+}
+
+/* HOVER */
+#aside .aside-row .icons:hover {
+  background-color: rgba(180, 180, 180, 0.5);
 }
 
 /* MAIN CONTENT */
