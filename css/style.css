@@ -175,6 +175,15 @@ tr .badge {
   margin: 10px 0;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.accordion-button:focus {
+  box-shadow: var(--white);
+}
+
 .list-group.list-group-flush .collapse-row {
   display: flex;
   justify-content: space-between;
